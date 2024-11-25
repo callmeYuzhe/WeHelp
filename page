@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人申請網頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #333;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h2>自我介紹</h2>
+        <p>在這裡介紹你自己，包括基本背景、學歷和經歷。</p>
+    </div>
+
+    <div class="section">
+        <h2>個人簡介和申請動機</h2>
+        <p>描述你的個人特質和背景，並解釋為什麼你對這個訓練計劃感興趣。</p>
+    </div>
+
+    <div class="section">
+        <h2>曾經做過哪些軟體工程技術相關的學習？</h2>
+        <p>列出你學過的技術、程式語言或框架。如果有作品，可以在此附上連結或簡要介紹。</p>
+    </div>
+
+    <div class="section">
+        <h2>學習時間安排</h2>
+        <p>說明你會如何規劃時間，以平衡訓練、學業或工作。</p>
+    </div>
+
+    <div class="section">
+        <h2>如何確定投入的領域是正確且有回報的？</h2>
+        <p>描述你如何評估和選擇技術領域的方式和理由。</p>
+    </div>
+
+    <div class="section">
+        <h2>如何處理負面情緒的經歷</h2>
+        <p>分享一次處理負面情緒的經驗，描述過程和心態調整方式。</p>
+    </div>
+
+    <div class="section">
+        <h2>技術心得分享</h2>
+        <p>分享一個開發這個網頁時的技術心得，說明學到的經驗或解決的問題。</p>
+    </div>
+
+    <div class="section">
+        <h2>工作和社會群體的連結關係</h2>
+        <p>描述你對自身工作和整個社會群體連結的看法。</p>
+    </div>
+
+    <div class="section">
+        <h2>其他努力</h2>
+        <p>說明你自上次申請以來所做的進一步努力（第一次申請可忽略此段）。</p>
+    </div>
+
+    <div class="section">
+        <h2>其他想對我們說的話</h2>
+        <p>在這裡表達你其他想分享的內容。</p>
+    </div>
+
+</body>
+</html>
