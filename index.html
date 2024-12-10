@@ -10,21 +10,22 @@
         body { 
             background-color: #ccc;
         }
-        .title{
+        .header{
+            background-color: #e6dfdf;
             display: flex;
             align-items: center;
             justify-content: center;
 
         }
-        .title img{
+        .header img{
             padding-bottom: 20px;
         }
-        .title span{
+        .header span{
             padding-left: 20px;
-            font-size: 5em;
+            font-size: 4em;
         }
         .text {
-            margin: auto auto 50px auto;
+            margin: 50px auto 50px auto;
             width: 55%;
             padding: 20px;
             border: 2px solid #333;
@@ -41,98 +42,144 @@
             border-bottom: 2px solid #ccc;
             padding-bottom: 5px;
             padding-top: 20px;
+            cursor: pointer;
         }
         .section p{
             font-size: 1.5em;
         }
+        .hide{
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <div class="title">
-        <img  src="logo.png" style="width: 100px;">
-        <span>WeHelp 第六屆申請網頁</span>
+    <div class="header">
+        <img  src="logo.png" style="width: 90px;">
+        <span> 第六屆申請網頁</span>
     </div>
 <div class="text">
     <div class="section">
-        <h2>自我介紹</h2>
-        <p>
-            你好，我叫邱堉哲，今年21歲，是嶺東科技大學資訊科技系的應屆畢業生。
-            雖然我是台中人，但從小在南投成長，與家人關係融洽，也深受鄰居的喜愛。今年，我已完成兵役，當的是暑期兵。
-            平時興趣是健身，目前已經持續一年半未來會繼續努力！
+        <h2 onclick="clickMe(this)">
+            自我介紹
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>        
+        <p class="hide">
+            你好，我叫邱堉哲，今年21歲，是台中人但從小在南投草屯的奶奶家長大，是嶺東科技大學資訊科技系的應屆畢業生。
+            我對於後端開發非常感興趣，目前正在自學Django和學校的AWS課程，並計畫在畢業之前做出一兩個能幫助我找到工作的side project。
+        </p>
+        <p class="hide">
+            平時最大的興趣是健身，目前也堅持了快兩年。在健身的過程中，我好像更清楚地知道自己想成為什麼樣的人。
+            以前我比較追求短暫的快樂和刺激，但現在更注重那種穩定、持久的滿足感，這讓我對生活和自己有了更深的認識。
         </p>
     </div>
 
     <div class="section">
-        <h2>個人簡介和申請動機</h2>
-        <p>
-            我來自草屯的一個普通家庭，小時候對學習有興趣，成績也還不錯，但高中時選擇了地方高職，之後因為各種環境的影響，我逐漸偏離了當初的方向。
+        <h2 onclick="clickMe(this)">
+            個人簡介和申請動機
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">
+            以前小時候很不愛讀書，但成績一直還不錯，直到高中時選擇了地方高職，之後因為各種環境的影響，我逐漸偏離了當初的方向。
             那時候，我對未來並沒有清晰的目標，也不覺得讀書和努力有多大的意義。
         </p>
-        <p>
-            直到大學當兵時，我遇到了許多來自不同背景的人，很多都是海歸或台清交成的學生。他們的努力和成就讓我感到自卑，但這股自卑並沒有擊垮我，反而讓我開始重新思考自己的人生。
+        <p class="hide">
+            直到大學當兵時，我遇到了許多不同背景的人，很多都是海歸或台清交成的學生。他們的努力和成就讓我感到自卑，但這股自卑並沒有擊垮我，反而讓我開始重新思考自己的人生。
             無論過去如何，我相信只要從現在開始努力，21歲的我還來得及追趕上我的人生。
         </p>
-        <p>
-            在大學期間，我接觸過一些與資工相關的課程，例如:Python、AWS...等，當時我發現我對寫程式非常感興趣，並且能帶給我不小的成就感。
+        <p class="hide">
+            在大學期間，我接觸過一些與資工相關的課程，例如:Python、AWS...等，我發現我對寫程式非常感興趣，並且能帶給我不小的成就感。
             然而，因為課程的內容比較廣泛，所以我沒能深入去掌握這個領域的核心技能。
-            所以為了讓自己更專業且具備實戰能力，我希望能透過這個計劃去有系統的學習軟體工程，並以此作為踏入軟體開發職業的起點。
+            所以為了讓自己更專業且具備實戰能力，我希望能透過這個計劃去有系統的學習軟體工程，並以此作為踏入軟工職業的起點。
         </p>
     
     </div>
 
     <div class="section">
-        <h2>曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們。</h2>
-        <p>Python、Django、Flask、Mysql、Html、css、JavaScript</p>
-        <p>他結合了CRUD和驗證碼登入以及權限管理等安全特性，介面是採用bootstrap樣式製作而成的，是一個公司用戶的管理系統。</p>
+        <h2 onclick="clickMe(this)">
+            曾經做過哪些軟體工程技術相關的學習？若有作品請分享給我們
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">Python、Django、Flask、Mysql、Html、css、JavaScript、jQuery</p>
+        <p class="hide">他結合了CRUD和驗證碼登入以及權限管理等安全特性，介面是採用bootstrap樣式製作而成的，是一個公司用戶的管理系統。</p>
     </div>
 
     <div class="section">
-        <h2>如果參與這個訓練，會怎麼安排學習時間？</h2>
-        <p>
+        <h2 onclick="clickMe(this)">
+            如果參與這個訓練，會怎麼安排學習時間
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">
             因為我確定可以順利畢業，也決定好未來想走的道路，因此在大四下我將全力投入在學習成為軟體工程師的道路上。
             我希望利用這段時間去提升技能，為畢業後的求職做好充分準備，實現從學習到工作的無縫銜接。
         </p>
-        <!-- 說明你會如何規劃時間，以平衡訓練、學業或工作。 -->
+        <p class="hide">
+            早上八點起床後是我最專注的時間，時間分配應該會從9:00到11:30兩個半小時，我會拿來看一下知識點。
+            吃完午餐12:00這時候我大概會想睡覺，我通常會睡個一小時左右，然後延續早上內容，並實際操作。
+            一直到16:30出門健身、吃飯完回家大約18:30，這些是我這陣子自學的時間分配。
+        <P class="hide">
+            再加入WeHelp計畫後，會依照任務和進度報告的情況，再晚上繼續努力，我相信這麼充裕的時間足夠我完成每項任務，並且超前進度提前預習。
+        </p>
+        </p>
     </div>
 
     <div class="section">
-        <h2>軟體技術日新月異，如何確定投入的領域是正確有回報的？</h2>
-        <p>未來充滿不確定，但對我而言，重要的不是預測未來，而是對當下所做的決定保持信心。</p>
-        <p>我相信，只要現在的選擇符合我的目標與興趣，並且能夠在未來的道路上不斷深耕，隨著市場的變化調整自己的技能和方向，最終一定會有所回報。</p>
+        <h2 onclick="clickMe(this)">
+            軟體技術日新月異，如何確定投入的領域是正確有回報的
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">未來充滿不確定，但對我而言，重要的不是預測未來，而是對當下所做的決定保持信心。</p>
+        <p class="hide">我相信，只要現在的選擇符合我的目標與興趣，並且能夠在未來的道路上不斷深耕，隨著市場的變化調整自己的技能和方向，最終一定會有所回報。</p>
     </div>
 
     <div class="section">
-        <h2>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h2>
-        <p>
+        <h2 onclick="clickMe(this)">
+            請描述一件產生明顯負面情緒的經歷，如何處理該情緒
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">
             在這之前我因為臨近畢業對未來感到迷茫，特別是看到身邊的人都非常優秀，而我卻沒有明確的方向。這讓我感到焦慮和自卑。
         </p>
-        <p>
-            但我認為這些負面情緒，只會讓我變得更加強大。我開始學會和情緒共處，並且尋找自己的興趣和目標在這個過程中，我接觸到程式設計，發現它不僅吸引我，也是一條充滿挑戰的道路。
-            我開始利用每天的空閒時間學習Python，並完成了一些小型專案。
+        <p class="hide">
+            但我認為這些負面情緒，只會讓我變得更加強大。我開始學會和情緒共處，並且尋找自己的興趣和目標在這個過程中，我接觸到程式設計，它不僅吸引我，也是一條充滿挑戰的道路。
+            我開始利用每天的空閒時間學習，並完成了一些小型專案。
         </p>
-        <p>
-            負面情緒是成長中的必經之路，關鍵在於如何將它轉化為推動自己前進的動力，我想我有能力面對未來的任何挑戰。
+        <p class="hide">
+            我認為負面情緒是成長中的必經之路，關鍵在於如何將它轉化為推動自己前進的動力，只要我還沒被打敗我就會變得更強，我想我有能力面對未來的任何挑戰。
         </p>
     </div>
 
     <div class="section">
-        <h2>關於這份申請網頁，分享一個開發時的技術心得。</h2>
-        <p>我想是用 GitHub Pages 的分支部署設定，成功讓網站顯示資料夾裡的內容，之後也順利完成每次的更新和推送，這是我第一次使用 GitHub 過程還滿有成就感的。</p>
+        <h2 onclick="clickMe(this)">
+            關於這份申請網頁，分享一個開發時的技術心得
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">我想是用 GitHub Pages 的分支部署設定，成功讓網站顯示資料夾裡的內容，之後也順利完成每次的更新和推送，這是我第一次使用 GitHub 過程，對我而言有新奇又有成就感。</p>
     </div>
 
     <div class="section">
-        <h2>如何看待自身工作和整個社會群體的連結關係？</h2>
-        <p>軟體工程師在這個數位時代我認為是十分重要的，社會高速發展，我們也勢必需要去提升技能、擴展知識。</p>
-        <p>這不僅有助於個人的職涯，相對的也是對自己的一份追求。「生於憂患，死於安樂」，這是我近幾年深刻的體悟。</p>
+        <h2 onclick="clickMe(this)">
+            如何看待自身工作和整個社會群體的連結關係
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">軟體工程師在這個數位時代我認為是十分重要的，社會高速發展，我們也勢必需要去提升技能、擴展知識。</p>
+        <p class="hide">這不僅有助於個人的職涯，相對的也是對自己的一份追求。「生於憂患，死於安樂」，這是我近幾年深刻的體悟。</p>
     </div>
 
     <div class="section">
-        <h2>其他想要對我們說的事情？</h2>
-        <p>說的再多也不如實際去做，我知道成功並非一蹴而就，而是靠努力與堅持不懈。我希望WePlay的各位前輩能給我這次寶貴的機會，讓我用行動來證明自己的決心。</p>
-        <p>這是人生的一次重新起航。我會全力以赴，盡快掌握所需的技能，並在畢業後不再迷茫，朝著成為一名出色的軟體工程師邁進。</p>
+        <h2 onclick="clickMe(this)">
+            其他想要對我們說的事情
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+        </h2>
+        <p class="hide">說的再多也不如實際去做，我知道成功並非一蹴而就，而是靠努力與堅持不懈。我希望WePlay的各位前輩能給我這次寶貴的機會，讓我用行動來證明自己的決心。</p>
+        <p class="hide">這是人生的一次重新起航。我會全力以赴，盡快掌握所需的技能，並在畢業後不再迷茫，朝著成為一名出色的軟體工程師邁進。</p>
     </div>
 </div>
-
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script>
+    function clickMe(self) {
+        $(self).siblings('p').toggleClass("hide");
+        $(self).parent().siblings().find("p").addClass("hide")
+    }
+</script>
 </body>
