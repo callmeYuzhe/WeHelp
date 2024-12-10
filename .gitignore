@@ -1,0 +1,33 @@
+# Python 編譯文件
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# 虛擬環境
+env/
+venv/
+
+# 資料庫檔案
+*.sqlite3
+
+# 日誌和暫存文件
+*.log
+*.pot
+*.py[cod]
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# 靜態文件和媒體檔案
+staticfiles/
+media/
+
+# IDE 設定檔
+.vscode/
+.idea/
+
+# 系統檔案
+.DS_Store
+Thumbs.db
